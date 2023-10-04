@@ -13,6 +13,7 @@
       <fieldset><label>Haslo:<input type="password" required></label></fieldset><br>
       <fieldset><label>Email:<input type="email"></fieldset></label><br>
       <fieldset><label>Numer telefonu: <input type="tel"></label></fieldset><br>
+      <fieldset><label>Adres: <input type="text"></label></fieldset><br>
       <input  type="submit" value="Przeslij">
       <input  type="reset" value="Reset">
 
@@ -180,6 +181,7 @@
     </fieldset>
     <fieldset><legend class="glowne">Informacje o Urządzeniach peryferyjnych</legend>
     <fieldset><legend>Myszka</legend>
+        <label for="mysz"><label>Przewodowa<input type="radio" name="mysz"></label><label>Bezprzewodowa<input type="radio" name="mysz"></label>
         <select name="mysz">
             <option name="mysz" id="mysz1">Logitech</option>
             <option name="mysz" id="mysz2">SPC Gear</option>
@@ -230,9 +232,9 @@
                             <option name="skan" id="skan2">Opsen</option>
                             <option name="skan" id="skan3">Fujitsu</option>
                         </select></fieldset>
+                        <fieldset><legend>WYBIERZ CENĘ<legend></legend><input value="500" type="range" id="b" name="b" min="500" max="10000" step="100" oninput="result1.value=b.value"/>           
+                            <output name="result1" for="b"></output>zł<br></fieldset>
                         <fieldset><legend>DODATKOWE UWAGI</legend><br><textarea rows="5" cols="60"></textarea></fieldset><br>
-                        <fieldset><legend>WYBIERZ CENĘ<legend><input value="500" type="range" id="a" name="a" min="500" max="10000" step="100" oninput="result.value=a.value"/>           
-                            <output name="result" for="a"></output>zł<br></fieldset>
         <input  type="submit" value="Przeslij">
       <input  type="reset" value="Reset">
          
@@ -242,3 +244,4 @@
     
 </body>
 </html>
+
