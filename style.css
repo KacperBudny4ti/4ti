@@ -9,3 +9,9 @@ fieldset {
 select {
     display: block;
 }
+
+.glowne {
+    font-size: 30px;
+    background: white;
+    border: 1px solid ;
+}
