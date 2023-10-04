@@ -9,42 +9,70 @@
 <body>
     <form>
       <fieldset><legend>Informacje o użytkowniku</legend>
-      <label>Login:<input type="text" required></label>
-      <label>Haslo:<input type="password" required></label>
-      <label>Email:<input type="email"></label>
+      <label>Login:<input type="text" required></label><br>
+      <label>Haslo:<input type="password" required></label><br>
+      <label>Email:<input type="email"></label><br>
       <input  type="submit" value="Przeslij">
       <input  type="reset" value="Reset">
 
     </fieldset>
     <fieldset><legend>Informacje o komputerze</legend>
-        <label>Procesor <select for="proc">
-            <option name="proc">Intel</option>
-            <option name="proc">AMD</option>
+        <label>Procesor <select name="proc">
+            <option name="proc1">Intel</option>
+            <option name="proc2">AMD</option>
         </select></label>
-        <label>Karta graficzna <select for="graf">
-            <option name="graf">NVIDIA</option>
-            <option name="graf">RADEON</option>
+        <fieldset for="chlo"><legend>Chłodzenie procesora</legend>
+            <label>Powietrzne <input type="radio" name="chlo"></label>
+            <label>Wodne <input type="radio" name="chlo"></label>
+        </fieldset>
+        <label>Karta graficzna <select name="graf">
+            <option name="graf1">NVIDIA</option>
+            <option name="graf2">RADEON</option>
         </select></label>
-        <label>Pamiec RAM <select for="RAM">
+        <label>Pamiec RAM <select name="RAM">
+            <optgroup label="32GB">
+                <option name="RAM321">32GB Kingston</option>
+                <option name="RAM322">32GB Gigabyte</option>
+                <option name="RAM323">32GB Samsung</option>
+                <option name="RAM323">32GB Corsair</option>
+            </optgroup>
             <optgroup label="16GB">
-            <option name="RAM">Kingston</option>
-            <option name="RAM">Gigabyte</option>
-            <option name="RAM">Samsung</option>
-            <option name="RAM">Corsair</option>
+            <option name="RAM161">16GB Kingston</option>
+            <option name="RAM162">16GB Gigabyte</option>
+            <option name="RAM163">16GB Samsung</option>
+            <option name="RAM164">16GB Corsair</option>
         </optgroup>
         <optgroup label="8GB">
-            <option name="RAM">Kingston</option>
-            <option name="RAM">Gigabyte</option>
-            <option name="RAM">Samsung</option>
-            <option name="RAM">Corsair</option>
+            <option name="RAM81">8GB Kingston</option>
+            <option name="RAM82">8GB Gigabyte</option>
+            <option name="RAM83">8GB Samsung</option>
+            <option name="RAM84">8GB Corsair</option>
         </optgroup>
+        </select></label>
+        <label>Płyta główna<select name="glow">
+            <option name="glow1">Gigabyte</option>
+            <option name="glow2">Asus</option>
+            <option name="glow3">ASRock</option>
+            <option name="glow4">Msi</option>
+        </select></label>
+        <label>Zasilacz<select name="zasi">
+            <option name="zasi1">ENDORFY</option>
+            <option name="zasi2">be quiet!</option>
+            <option name="zasi3">MSI</option>
+            <option name="zasi4">MSI</option>
+            <option name="zasi5">MSI</option>
+        </select></label>
+        <label>Ilość wentylatorów<select name="went">
+            <option name="went1">1</option>
+            <option name="went2">2</option>
+            <option name="went3">3</option>
+            <option name="went4">4</option>
         </select></label>
 
         <input  type="submit" value="Przeslij">
       <input  type="reset" value="Reset">
 
     </fieldset>
-
     </form>
     
 </body>

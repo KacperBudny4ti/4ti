@@ -5,3 +5,7 @@ body {
 fieldset {
     background-color: lightgray;
 }
+
+select {
+    display: block;
+}
