@@ -36,14 +36,24 @@
                    <option name="SSD1">Kingston</option>
                    <option name="SSD2">Samsung</option>
                    <option name="SSD3">Gigabyte</option>
+                   <option name="SSD4">brak</option>
+
                 </label>
             </select>
                 <label>HDD<select>
                     <option name="HDD1">Seagate</option>
                     <option name="HDD2">WD</option>
                     <option name="HDD3">Toshiba</option>
+                    <option name="HDD4">brak</option>
 
                 </select></label>
+             <label>Pojemność<select>
+              <option name="poje1">256GB</option>
+              <option name="poje2">512GB</option>
+              <option name="poje3">1024GB</option>
+              <option name="poje4">2048GB</option>
+              <option name="poje5">4096GB</option>
+            </select> </label>
         </fieldset>
         <fieldset><legend>Pamieć RAM</legend><label>Pamiec RAM 1<select name="RAM">
             <optgroup label="32GB">
@@ -153,7 +163,7 @@
             <option name="went3">3</option>
             <option name="went4">4</option>
         </select></fieldset>
-        <label>WYBIERZ CENĘ<input type="range" id="a" name="a" min="500" max="10000" step="100" oninput="result.value=a.value"/>           
+        <label>WYBIERZ CENĘ<input value="500" type="range" id="a" name="a" min="500" max="10000" step="100" oninput="result.value=a.value"/>           
         <output name="result" for="a"></output>zł<br></label>
 
         <input  type="submit" value="Przeslij">
@@ -162,6 +172,52 @@
     </fieldset>
     <fieldset><legend class="glowne">Urządzenia peryferyjne</legend>
     <fieldset><legend>Myszka</legend>
+        <select name="mysz">
+            <option name="mysz1">Logitech</option>
+            <option name="mysz2">SPC Gear</option>
+            <option name="mysz3">SteelSeries</option>
+        </select></fieldset>
+        <fieldset><legend>Klawiatura</legend>
+            <select name="klaw">
+                <option name="klaw1">Razer</option>
+                <option name="klaw2">SPC Gear</option>
+                <option name="klaw3">Genesis</option>
+            </select></fieldset>
+            <fieldset><legend>Monitor</legend>
+                <select name="moni">
+                    <optgroup label="Przekątna ekranu">
+                        <optgroup label="20 - 30 cali">
+                    <option name="moni1">Acer</option>
+                    <option name="moni2">MSI</option>
+                    <option name="moni3">SteelSeries</option>
+                       </optgroup>
+                       <optgroup label="30 - 40 cali">
+                        <option name="moni4">Acer</option>
+                        <option name="moni5">MSI</option>
+                        <option name="moni6">SteelSeries</option>
+                           </optgroup>
+                           <optgroup label="40 - 50 cali">
+                            <option name="moni7">Acer</option>
+                            <option name="moni8">MSI</option>
+                            <option name="moni9">SteelSeries</option>
+                               </optgroup>
+                </optgroup>
+                </select></fieldset>
+                <fieldset><legend>Drukarka</legend>
+                    <select name="druk">
+                        <option name="druk1">Brother</option>
+                        <option name="druk2">HP</option>
+                        <option name="druk3">Canon</option>
+                    </select></fieldset>
+                    <fieldset><legend>Skaner</legend>
+                        <select name="skan">
+                            <option name="skan1">Canon</option>
+                            <option name="skan2">Opsen</option>
+                            <option name="skan3">Fujitsu</option>
+                        </select></fieldset>
+
+        <input  type="submit" value="Przeslij">
+      <input  type="reset" value="Reset">
          
     </fieldset>
     </fieldset>
