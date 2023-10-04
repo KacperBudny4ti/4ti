@@ -7,7 +7,45 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a>moja strona</a>
+    <form>
+      <fieldset><legend>Informacje o użytkowniku</legend>
+      <label>Login:<input type="text" required></label>
+      <label>Haslo:<input type="password" required></label>
+      <label>Email:<input type="email"></label>
+      <input  type="submit" value="Przeslij">
+      <input  type="reset" value="Reset">
+
+    </fieldset>
+    <fieldset><legend>Informacje o komputerze</legend>
+        <label>Procesor <select for="proc">
+            <option name="proc">Intel</option>
+            <option name="proc">AMD</option>
+        </select></label>
+        <label>Karta graficzna <select for="graf">
+            <option name="graf">NVIDIA</option>
+            <option name="graf">RADEON</option>
+        </select></label>
+        <label>Pamiec RAM <select for="RAM">
+            <optgroup label="16GB">
+            <option name="RAM">Kingston</option>
+            <option name="RAM">Gigabyte</option>
+            <option name="RAM">Samsung</option>
+            <option name="RAM">Corsair</option>
+        </optgroup>
+        <optgroup label="8GB">
+            <option name="RAM">Kingston</option>
+            <option name="RAM">Gigabyte</option>
+            <option name="RAM">Samsung</option>
+            <option name="RAM">Corsair</option>
+        </optgroup>
+        </select></label>
+
+        <input  type="submit" value="Przeslij">
+      <input  type="reset" value="Reset">
+
+    </fieldset>
+
+    </form>
     
 </body>
 </html>
