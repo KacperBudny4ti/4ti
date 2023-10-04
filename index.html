@@ -19,153 +19,161 @@
     </fieldset>
     <fieldset><legend class="glowne">Informacje o komputerze</legend>
         <fieldset><legend>Procesor</legend> <select name="proc">
-            <option name="proc1">Intel</option>
-            <option name="proc2">AMD</option>
+            <option name="proc" id="proc1">Intel</option>
+            <option name="proc" id="proc2">AMD</option>
         </select></fieldset>
         <fieldset for="chlo"><legend>Chłodzenie procesora</legend>
-            <label>Powietrzne <input type="radio" name="chlo"></label>
-            <label>Wodne <input type="radio" name="chlo"></label>
+            <label>Powietrzne <input type="radio" name="chlo" id="chlo1"></label>
+            <label>Wodne <input type="radio" name="chlo" id="chlo2"></label>
         </fieldset>
         <fieldset><legend>Karta graficzna</legend> <select name="graf">
-            <option name="graf1">NVIDIA</option>
-            <option name="graf2">RADEON</option>
+            <option name="graf" id="graf1">NVIDIA</option>
+            <option name="graf" id="graf2">RADEON</option>
         </select></fieldset>
         <fieldset>
             <legend>Dysk pamięci</legend>
-            <label>SSD<select>
-                   <option name="SSD1">Kingston</option>
-                   <option name="SSD2">Samsung</option>
-                   <option name="SSD3">Gigabyte</option>
-                   <option name="SSD4">brak</option>
+            <label>SSD<select name="SSD">
+                   <option name="SSD" id="SSD1">Kingston</option>
+                   <option name="SSD" id="SSD2">Samsung</option>
+                   <option name="SSD" id="SSD3">Gigabyte</option>
+                   <option name="SSD" id="SSD4">brak</option>
 
                 </label>
             </select>
-                <label>HDD<select>
-                    <option name="HDD1">Seagate</option>
-                    <option name="HDD2">WD</option>
-                    <option name="HDD3">Toshiba</option>
-                    <option name="HDD4">brak</option>
+                <label>HDD<select name="HDD">
+                    <option id="HDD1" name="HDD">Seagate</option>
+                    <option id="HDD2" name="HDD">WD</option>
+                    <option id="HDD3" name="HDD">Toshiba</option>
+                    <option id="HDD4" name="HDD">brak</option>
 
                 </select></label>
-             <label>Pojemność<select>
-              <option name="poje1">256GB</option>
-              <option name="poje2">512GB</option>
-              <option name="poje3">1024GB</option>
-              <option name="poje4">2048GB</option>
-              <option name="poje5">4096GB</option>
+             <label>Pojemność<select name="poje">
+              <option name="poje" id="poje1">256GB</option>
+              <option name="poje" id="poje2">512GB</option>
+              <option name="poje" id="poje3">1024GB</option>
+              <option name="poje" id="poje4">2048GB</option>
+              <option name="poje" id="poje5">4096GB</option>
             </select> </label>
         </fieldset>
         <fieldset><legend>Pamieć RAM</legend><label>Pamiec RAM 1<select name="RAM">
-            <optgroup label="32GB">
-                <option name="RAM321">32GB Kingston</option>
-                <option name="RAM322">32GB Gigabyte</option>
-                <option name="RAM323">32GB Samsung</option>
-                <option name="RAM323">32GB Corsair</option>
+            <optgroup label="32GB" name="RAM32">
+                <option name="RAM32">32GB Kingston</option>
+                <option name="RAM32">32GB Gigabyte</option>
+                <option name="RAM32">32GB Samsung</option>
+                <option name="RAM32">32GB Corsair</option>
             </optgroup>
-            <optgroup label="16GB">
-            <option name="RAM161">16GB Kingston</option>
-            <option name="RAM162">16GB Gigabyte</option>
-            <option name="RAM163">16GB Samsung</option>
-            <option name="RAM164">16GB Corsair</option>
+            <optgroup label="16GB" name="RAM16">
+            <option name="RAM16">16GB Kingston</option>
+            <option name="RAM16">16GB Gigabyte</option>
+            <option name="RAM16">16GB Samsung</option>
+            <option name="RAM16">16GB Corsair</option>
         </optgroup>
-        <optgroup label="8GB">
-            <option name="RAM81">8GB Kingston</option>
-            <option name="RAM82">8GB Gigabyte</option>
-            <option name="RAM83">8GB Samsung</option>
-            <option name="RAM84">8GB Corsair</option>
+        <optgroup label="8GB" name="RAM8">
+            <option name="RAM8">8GB Kingston</option>
+            <option name="RAM8">8GB Gigabyte</option>
+            <option name="RAM8">8GB Samsung</option>
+            <option name="RAM8">8GB Corsair</option>
         </optgroup>
         <option>brak</option>
         
         </select></label>
         <label>Pamiec RAM 2<select name="RAM">
-            <optgroup label="32GB">
-                <option name="RAM321">32GB Kingston</option>
-                <option name="RAM322">32GB Gigabyte</option>
-                <option name="RAM323">32GB Samsung</option>
-                <option name="RAM323">32GB Corsair</option>
+            <optgroup label="32GB" name="RAM32">
+                <option name="RAM32">32GB Kingston</option>
+                <option name="RAM32">32GB Gigabyte</option>
+                <option name="RAM32">32GB Samsung</option>
+                <option name="RAM32">32GB Corsair</option>
             </optgroup>
-            <optgroup label="16GB">
-            <option name="RAM161">16GB Kingston</option>
-            <option name="RAM162">16GB Gigabyte</option>
-            <option name="RAM163">16GB Samsung</option>
-            <option name="RAM164">16GB Corsair</option>
+            <optgroup label="16GB" name="RAM16">
+            <option name="RAM16">16GB Kingston</option>
+            <option name="RAM16">16GB Gigabyte</option>
+            <option name="RAM16">16GB Samsung</option>
+            <option name="RAM16">16GB Corsair</option>
         </optgroup>
-        <optgroup label="8GB">
-            <option name="RAM81">8GB Kingston</option>
-            <option name="RAM82">8GB Gigabyte</option>
-            <option name="RAM83">8GB Samsung</option>
-            <option name="RAM84">8GB Corsair</option>
+        <optgroup label="8GB" name="RAM8">
+            <option name="RAM8">8GB Kingston</option>
+            <option name="RAM8">8GB Gigabyte</option>
+            <option name="RAM8">8GB Samsung</option>
+            <option name="RAM8">8GB Corsair</option>
         </optgroup>
         <option>brak</option>
         
         </select></label>
         <label>Pamiec RAM 3<select name="RAM">
-            <optgroup label="32GB">
-                <option name="RAM321">32GB Kingston</option>
-                <option name="RAM322">32GB Gigabyte</option>
-                <option name="RAM323">32GB Samsung</option>
-                <option name="RAM323">32GB Corsair</option>
+            <optgroup label="32GB" name="RAM32">
+                <option name="RAM32">32GB Kingston</option>
+                <option name="RAM32">32GB Gigabyte</option>
+                <option name="RAM32">32GB Samsung</option>
+                <option name="RAM32">32GB Corsair</option>
             </optgroup>
-            <optgroup label="16GB">
-            <option name="RAM161">16GB Kingston</option>
-            <option name="RAM162">16GB Gigabyte</option>
-            <option name="RAM163">16GB Samsung</option>
-            <option name="RAM164">16GB Corsair</option>
+            <optgroup label="16GB" name="RAM16">
+            <option name="RAM16">16GB Kingston</option>
+            <option name="RAM16">16GB Gigabyte</option>
+            <option name="RAM16">16GB Samsung</option>
+            <option name="RAM16">16GB Corsair</option>
         </optgroup>
-        <optgroup label="8GB">
-            <option name="RAM81">8GB Kingston</option>
-            <option name="RAM82">8GB Gigabyte</option>
-            <option name="RAM83">8GB Samsung</option>
-            <option name="RAM84">8GB Corsair</option>
+        <optgroup label="8GB" name="RAM8">
+            <option name="RAM8">8GB Kingston</option>
+            <option name="RAM8">8GB Gigabyte</option>
+            <option name="RAM8">8GB Samsung</option>
+            <option name="RAM8">8GB Corsair</option>
         </optgroup>
         <option>brak</option>
         
         </select></label>
         <label>Pamiec RAM 4<select name="RAM">
-            <optgroup label="32GB">
-                <option name="RAM321">32GB Kingston</option>
-                <option name="RAM322">32GB Gigabyte</option>
-                <option name="RAM323">32GB Samsung</option>
-                <option name="RAM323">32GB Corsair</option>
+            <optgroup label="32GB" name="RAM32">
+                <option name="RAM32">32GB Kingston</option>
+                <option name="RAM32">32GB Gigabyte</option>
+                <option name="RAM32">32GB Samsung</option>
+                <option name="RAM32">32GB Corsair</option>
             </optgroup>
-            <optgroup label="16GB">
-            <option name="RAM161">16GB Kingston</option>
-            <option name="RAM162">16GB Gigabyte</option>
-            <option name="RAM163">16GB Samsung</option>
-            <option name="RAM164">16GB Corsair</option>
+            <optgroup label="16GB" name="RAM16">
+            <option name="RAM16">16GB Kingston</option>
+            <option name="RAM16">16GB Gigabyte</option>
+            <option name="RAM16">16GB Samsung</option>
+            <option name="RAM16">16GB Corsair</option>
         </optgroup>
-        <optgroup label="8GB">
-            <option name="RAM81">8GB Kingston</option>
-            <option name="RAM82">8GB Gigabyte</option>
-            <option name="RAM83">8GB Samsung</option>
-            <option name="RAM84">8GB Corsair</option>
+        <optgroup label="8GB" name="RAM8">
+            <option name="RAM8">8GB Kingston</option>
+            <option name="RAM8">8GB Gigabyte</option>
+            <option name="RAM8">8GB Samsung</option>
+            <option name="RAM8">8GB Corsair</option>
         </optgroup>
         <option>brak</option>
         
         </select></label>
+        <label>Kolor RGB<input type="color" name="RAM"></label>
     </fieldset>
         <fieldset><legend>Płyta główna</legend><select name="glow">
-            <option name="glow1">Gigabyte</option>
-            <option name="glow2">Asus</option>
-            <option name="glow3">ASRock</option>
-            <option name="glow4">Msi</option>
+            <option name="glow" id="glow1">Gigabyte</option>
+            <option name="glow" id="glow2">Asus</option>
+            <option name="glow" id="glow3">ASRock</option>
+            <option name="glow" id="glow4">Msi</option>
         </select></label></fieldset>
         <fieldset><legend>Zasilacz</legend><select name="zasi">
-            <option name="zasi1">ENDORFY</option>
-            <option name="zasi2">be quiet!</option>
-            <option name="zasi3">MSI</option>
-            <option name="zasi4">MSI</option>
-            <option name="zasi5">MSI</option>
+            <option name="zasi" id="zasi1">ENDORFY</option>
+            <option name="zasi" id="zasi2">be quiet!</option>
+            <option name="zasi" id="zasi3">MSI</option>
+            <option name="zasi" id="zasi4">Gigabyte</option>
+            <option name="zasi" id="zasi5">Cooler Master</option>
         </select></fieldset>
-        <fieldset><legend>Ilość wentylatorów</legend><select name="went">
-            <option name="went1">1</option>
-            <option name="went2">2</option>
-            <option name="went3">3</option>
-            <option name="went4">4</option>
-        </select></fieldset>
-        <label>WYBIERZ CENĘ<input value="500" type="range" id="a" name="a" min="500" max="10000" step="100" oninput="result.value=a.value"/>           
+        <fieldset for="went"><legend>Ilość wentylatorów</legend>
+            <label>1<input type="radio" name="went" id="went1"></label>
+            <label>2<input type="radio" name="went" id="went2"></label>
+            <label>3<input type="radio" name="went" id="went3"></label>
+            <label>4<input type="radio" name="went" id="went4"></label>
+        </fieldset>
+        <fieldset><legend>Obudowa</legend><select name="obud">
+             <option name="obud" id="obud1">Lian Li</option>
+             <option name="obud" id="obud2">be quiet!</option>
+             <option name="obud" id="obud3">KRUX</option>
+            </select>
+            <label>Kolor obudowy<input type="color"></label>
+        </fieldset>
+        <label >WYBIERZ CENĘ<input value="500" type="range" id="a" name="a" min="500" max="10000" step="100" oninput="result.value=a.value"/>           
         <output name="result" for="a"></output>zł<br></label>
-
+        <fieldset><legend>DODATKOWE UWAGI</legend><br><textarea rows="5" cols="60"></textarea></fieldset><br>
         <input  type="submit" value="Przeslij">
       <input  type="reset" value="Reset">
 
@@ -173,48 +181,56 @@
     <fieldset><legend class="glowne">Urządzenia peryferyjne</legend>
     <fieldset><legend>Myszka</legend>
         <select name="mysz">
-            <option name="mysz1">Logitech</option>
-            <option name="mysz2">SPC Gear</option>
-            <option name="mysz3">SteelSeries</option>
+            <option name="mysz" id="mysz1">Logitech</option>
+            <option name="mysz" id="mysz2">SPC Gear</option>
+            <option name="mysz" id="mysz3">SteelSeries</option>
         </select></fieldset>
         <fieldset><legend>Klawiatura</legend>
             <select name="klaw">
-                <option name="klaw1">Razer</option>
-                <option name="klaw2">SPC Gear</option>
-                <option name="klaw3">Genesis</option>
+                <option name="klaw" id="klaw1">Razer</option>
+                <option name="klaw" id="klaw2">SPC Gear</option>
+                <option name="klaw" id="klaw3">Genesis</option>
             </select></fieldset>
             <fieldset><legend>Monitor</legend>
                 <select name="moni">
                     <optgroup label="Przekątna ekranu">
                         <optgroup label="20 - 30 cali">
-                    <option name="moni1">Acer</option>
-                    <option name="moni2">MSI</option>
-                    <option name="moni3">SteelSeries</option>
+                    <option id="moni1" name="moni">Acer</option>
+                    <option id="moni2" name="moni">MSI</option>
+                    <option id="moni3" name="moni">SteelSeries</option>
                        </optgroup>
                        <optgroup label="30 - 40 cali">
-                        <option name="moni4">Acer</option>
-                        <option name="moni5">MSI</option>
-                        <option name="moni6">SteelSeries</option>
+                        <option id="moni4" name="moni">Acer</option>
+                        <option id="moni5" name="moni">MSI</option>
+                        <option id="moni6" name="moni">SteelSeries</option>
                            </optgroup>
                            <optgroup label="40 - 50 cali">
-                            <option name="moni7">Acer</option>
-                            <option name="moni8">MSI</option>
-                            <option name="moni9">SteelSeries</option>
+                            <option id="moni7" name="moni">Acer</option>
+                            <option id="moni8" name="moni">MSI</option>
+                            <option id="moni9" name="moni">SteelSeries</option>
                                </optgroup>
                 </optgroup>
-                </select></fieldset>
+                </select>
+                <label for="mon">Ilość
+                    <label>1<input type="radio" name="mon" id="mon1"></label>
+                    <label>2<input type="radio" name="mon" id="mon2"></label>
+                    <label>3<input type="radio" name="mon" id="mon3"></label>
+
+                </label>
+            </fieldset>
                 <fieldset><legend>Drukarka</legend>
                     <select name="druk">
-                        <option name="druk1">Brother</option>
-                        <option name="druk2">HP</option>
-                        <option name="druk3">Canon</option>
+                        <option name="druk" id="druk1">Brother</option>
+                        <option name="druk" id="druk2">HP</option>
+                        <option name="druk" id="druk3">Canon</option>
                     </select></fieldset>
                     <fieldset><legend>Skaner</legend>
                         <select name="skan">
-                            <option name="skan1">Canon</option>
-                            <option name="skan2">Opsen</option>
-                            <option name="skan3">Fujitsu</option>
+                            <option name="skan" id="skan1">Canon</option>
+                            <option name="skan" id="skan2">Opsen</option>
+                            <option name="skan" id="skan3">Fujitsu</option>
                         </select></fieldset>
+                        <fieldset><legend>DODATKOWE UWAGI</legend><br><textarea rows="5" cols="60"></textarea></fieldset><br>
 
         <input  type="submit" value="Przeslij">
       <input  type="reset" value="Reset">
